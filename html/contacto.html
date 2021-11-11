@@ -35,15 +35,58 @@
         </nav>
     </header>
     <main>
+        <div>
+            <h1>Contáctanos</h1>
+        </div>
+        <!--Contact Form-->
+        <div>
+            <form method="post">
+                <fieldset>
+                    <div>
+                        <label for="txtnombre">Nombre</label>
+                        <input type="text" name="nombre" id="txtnombre" placeholder="Ingresa tu nombre..." required>
+                    </div>
+                    <div>
+                        <label for="txtemail">Mail</label>
+                        <input type="email" name="email" id="txtemail" placeholder="Ingresa tu mail..." required>
+                    </div>
+                    <div>
+                        <label for="txttelefono">Teléfono</label>
+                        <input type="text" name="telefono" id="txttelefono" placeholder="Ingresa tu teléfono" required>
+                    </div>
+                    <div>Forma de contacto preferida
+                        <div>
+                            <label for="opttelefono">Teléfono</label>
+                            <input type="radio" name="formacontacto" value="telefono" id="opttelefono">
+                        </div>
+                        <div>
+                            <label for="optmail">Mail</label>
+                            <input type="radio" name="formacontacto" value="mail" id="optmail">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="cbosmotivo">Motivo de Contacto</label>
+                        <select name="motivo" id="cbosmotivo">
+                            <option value="Consulta">Consulta</option>
+                            <option value="Reclamo">Reclamo</option>
+                            <option value="Sugerencia">Sugerencia</option>
+                            <option value="Pedido">Pedido</option>
+                            <option value="Felicitacion">Felicitación</option>
+                        </select>
+                    </div>
+                    <input type="submit" value="Enviar">
+                </fieldset>
+            </form>
+        </div>    
 
     </main>
 
     <!--Footer-->
     <footer>
 
-        <!--Copyright-->
+        <!--Copyright and contact-->
         <div class="div_footer">
-            Creado por Pablo Quiña
+            Creado por <a href="mailto:hinoken.htp@gmail.com">Pablo Quiña</a> 
         </div>
 
         <!--Social Media Links-->
