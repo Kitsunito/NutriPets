@@ -1,0 +1,27 @@
+/* Color Theme Swatches in Hex */
+.Nutripets2-1-hex { color: #90B031; }
+.Nutripets2-2-hex { color: #90B04F; }
+.Nutripets2-3-hex { color: #285011; }
+.Nutripets2-4-hex { color: #40481F; }
+.Nutripets2-5-hex { color: #E8EF47; }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #90B04F;
+}
+
+h1{
+    color: #40481F
+}
+
+nav {
+    background-color: #285011;
+}
+
+footer {
+    background-color: #285011;
+}
