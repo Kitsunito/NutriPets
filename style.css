@@ -8,10 +8,11 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Nunito', sans-serif;
 }
 
 body {
-    background-color: #90B04F;
+    background-color: #E8EF47;
 }
 
 h1{
@@ -20,8 +21,14 @@ h1{
 
 nav {
     background-color: #285011;
+    height: 60px;
+}
+
+ul {
+    
 }
 
 footer {
     background-color: #285011;
+    height: 50px;
 }
