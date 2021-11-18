@@ -3,7 +3,7 @@
 .Nutripets2-2-hex { color: #90B04F; }
 .Nutripets2-3-hex { color: #285011; }
 .Nutripets2-4-hex { color: #40481F; }
-.Nutripets2-5-hex { color: #f1f5af; }
+.Nutripets2-5-hex { color: #d7daa7; }
 
 *{
     margin: 0;
@@ -11,29 +11,39 @@
 }
 
 body {
-    background-color: #f1f5af;
+    background-color: #d6d8b6;
     font-family: 'Nunito', sans-serif;
-    margin-top: 60px;
 }
 
 nav {
-    background-color: #90B04F;
+    background-color: #285011;
     height: 60px;
     width: 100%;
     top: 0px;
     position: fixed;
     text-decoration: none;
+    display: inline-flex;
 }
 
+main {
+    text-align: center;
+    margin-top: 60px;
+    height: 30rem;
+}
 footer {
     background-color: #90B04F;
     height: 50px;
-    position: relative; 
+    width: 100%;
+    position: fixed; 
+    display: inline-flex;
     bottom: 0;
+    padding-top: 20px;
 }
 
 ul {
+    width: 100%;
     list-style: none;
+    display: inline-flex;
 }
 
 h1{
@@ -43,6 +53,12 @@ h1{
 
 a {
     text-decoration: none;
+    color:#FFFFFF;
+}
+
+nav li a {
+    display: inline-block;
+    font-size: 16px;
 }
 
 .navbar-brand {
@@ -60,16 +76,34 @@ a {
 
 .menu {
     width: 80%;
-    background-color: aqua;
-    display: inline-block;
     position:fixed;
     right: 0;
 }
 
 .nav-item {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    height: 60px;
     width: 20%;
-    display: inline-block;
     text-align: center;
+    padding-top: 20px;
+
+}
+
+.div-footer-socialmedia {
+    position: fixed;
+    right: 0;
+    text-align: left;
+    font-size: 25px;
+    padding-right: 15px;
+}
+
+.div-footer-copyright {
+    color:#40481F;
+    font-size: 14px;
+    padding: 8px 0 0 10px;
+}
+
+#portada{
+    height: 30rem;
+    width: auto;
+
 }
