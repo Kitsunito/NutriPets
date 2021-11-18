@@ -3,32 +3,73 @@
 .Nutripets2-2-hex { color: #90B04F; }
 .Nutripets2-3-hex { color: #285011; }
 .Nutripets2-4-hex { color: #40481F; }
-.Nutripets2-5-hex { color: #E8EF47; }
+.Nutripets2-5-hex { color: #f1f5af; }
 
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Nunito', sans-serif;
 }
 
 body {
-    background-color: #E8EF47;
-}
-
-h1{
-    color: #40481F
+    background-color: #f1f5af;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 60px;
 }
 
 nav {
-    background-color: #285011;
+    background-color: #90B04F;
     height: 60px;
-}
-
-ul {
-    
+    width: 100%;
+    top: 0px;
+    position: fixed;
+    text-decoration: none;
 }
 
 footer {
-    background-color: #285011;
+    background-color: #90B04F;
     height: 50px;
+    position: relative; 
+    bottom: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+h1{
+    color: #40481F;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar-brand {
+    width: 20%;
+    height: 60px;
+    display: inline-block;
+    text-align: center;
+}
+
+.brand-logo{
+    height: 100%;
+    width: auto;
+    border-radius: 50%;
+}
+
+.menu {
+    width: 80%;
+    background-color: aqua;
+    display: inline-block;
+    position:fixed;
+    right: 0;
+}
+
+.nav-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 20%;
+    display: inline-block;
+    text-align: center;
 }
