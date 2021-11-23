@@ -15,10 +15,13 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
-nav {
-    background-color: #285011;
+header {
+    background-color: #90B031;
     height: 60px;
-    width: 100%;
+}
+
+nav {
+    width: 80%;
     top: 0px;
     position: fixed;
     text-decoration: none;
@@ -27,9 +30,9 @@ nav {
 
 main {
     text-align: center;
-    margin-top: 60px;
-    height: 30rem;
+    height: 400px;
 }
+
 footer {
     background-color: #90B04F;
     height: 50px;
@@ -102,8 +105,13 @@ nav li a {
     padding: 8px 0 0 10px;
 }
 
+#div-portada {
+    width: 400px
+}
+
 #portada{
-    height: 30rem;
-    width: auto;
+    height: auto;
+    width: 100%;
+    opacity: 0.9;
 
 }
