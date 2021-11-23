@@ -29,8 +29,19 @@ nav {
 }
 
 main {
+    display: flex;
     text-align: center;
-    height: 400px;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+section {
+    width: 100%;
+}
+
+article {
+    margin-bottom: 25px;
 }
 
 footer {
@@ -52,6 +63,11 @@ ul {
 h1{
     color: #40481F;
     text-align: center;
+    margin: 15px 0 25px 0;
+}
+
+h2 {
+    margin-bottom:10px;
 }
 
 a {
@@ -64,6 +80,9 @@ nav li a {
     font-size: 16px;
 }
 
+img {
+    height: 100%;
+}
 .navbar-brand {
     width: 20%;
     height: 60px;
@@ -105,13 +124,47 @@ nav li a {
     padding: 8px 0 0 10px;
 }
 
+.horizontal-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.section-products {
+    background-color: #dac0a7;
+    justify-content: center;
+    width: 100%;
+}
+
+.div-product{
+    height: 150px;
+    width: 180px;
+    background-color: #285011;
+}
+
+.article-text {
+    max-height: 270px;
+    width: 60%;
+}
+
+.article-image {
+    max-height: 270px;
+    width: 40%;
+}
+
+.nosotros-map {
+    width: 40%;
+}
+
+.nosotros-description {
+    width: 60%;
+}
+
 #div-portada {
-    width: 400px
+    height: 400px;
 }
 
 #portada{
-    height: auto;
-    width: 100%;
+    height: 100%;
     opacity: 0.9;
-
 }
