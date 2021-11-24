@@ -11,12 +11,12 @@
 </head>
 <body>
     <header>
-        <!--Company's Branding-->
-        <div class='navbar-brand'>
-            <a href="../index.html"><img src="../img/logo.png" alt="" class="brand-logo"></a>
-        </div>
         <!--Navbar-->
-        <nav>
+        <nav class="horizontal-flex">
+            <!--Company's Branding-->
+            <div class='navbar-brand'>
+                <a href="../index.html"><img src="../img/logo.png" alt="" class="brand-logo"></a>
+            </div>
             <!--Menu-->
             <div class="menu">
                 <ul class="nav-list">
@@ -33,6 +33,7 @@
                         <a href="nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item">
+                        
                         <a href="contacto.html">Contáctanos</a>
                     </li>
                 </ul>
@@ -44,51 +45,50 @@
             <h1>Contáctanos</h1>
         </div>
         <!--Contact Form-->
-        <div>
+        <section>
             <form method="post">
-                <fieldset>
+                <div class="form-question">
+                    <label for="txtnombre">Nombre</label>
+                    <input type="text" name="nombre" class="form-control" id="txtnombre" placeholder="Ingresa tu nombre..." required>
+                </div>
+                <div class="form-question">
+                    <label for="txtemail">Mail</label>
+                    <input type="email" name="email" class="form-control" id="txtemail" placeholder="Ingresa tu mail..." required>
+                </div>
+                <div  class="form-question">
+                    <label for="txttelefono">Teléfono</label>
+                    <input type="text" name="telefono" class="form-control" id="txttelefono" placeholder="Ingresa tu teléfono" required>
+                </div>
+                <div  class="form-question" id="opt-question">
+                    <p>Forma de contacto preferida</p>
+                    <div class="radio-group">
+                        <input type="radio" name="formacontacto" value="telefono" class="input-radio" id="opttelefono">
+                        <label class="opt-label" for="opttelefono">Teléfono</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" name="formacontacto" value="mail" class="input-radio" id="optmail">
+                        <label class="opt-label" for="optmail">Mail</label>
+                    </div>
+                </div>
+                <div class="form-question">
+                    <label for="cbosmotivo">Motivo de Contacto</label>
+                    <select name="motivo" class="form-control" id="cbosmotivo">
+                        <option value="Consulta">Consulta</option>
+                        <option value="Reclamo">Reclamo</option>
+                        <option value="Sugerencia">Sugerencia</option>
+                        <option value="Pedido">Pedido</option>
+                        <option value="Felicitacion">Felicitación</option>
+                    </select>
+                </div>
+                <div class="form-question">
+                    <label for="txtMensaje">Mensaje</label>
                     <div>
-                        <label for="txtnombre">Nombre</label>
-                        <input type="text" name="nombre" id="txtnombre" placeholder="Ingresa tu nombre..." required>
+                        <textarea name="mensaje" class="input-textarea" id="txtMensaje" cols="30" rows="10" placeholder="Escriba su mensaje..." required></textarea>
                     </div>
-                    <div>
-                        <label for="txtemail">Mail</label>
-                        <input type="email" name="email" id="txtemail" placeholder="Ingresa tu mail..." required>
-                    </div>
-                    <div>
-                        <label for="txttelefono">Teléfono</label>
-                        <input type="text" name="telefono" id="txttelefono" placeholder="Ingresa tu teléfono" required>
-                    </div>
-                    <div>Forma de contacto preferida
-                        <div>
-                            <label for="opttelefono">Teléfono</label>
-                            <input type="radio" name="formacontacto" value="telefono" id="opttelefono">
-                        </div>
-                        <div>
-                            <label for="optmail">Mail</label>
-                            <input type="radio" name="formacontacto" value="mail" id="optmail">
-                        </div>
-                    </div>
-                    <div>
-                        <label for="cbosmotivo">Motivo de Contacto</label>
-                        <select name="motivo" id="cbosmotivo">
-                            <option value="Consulta">Consulta</option>
-                            <option value="Reclamo">Reclamo</option>
-                            <option value="Sugerencia">Sugerencia</option>
-                            <option value="Pedido">Pedido</option>
-                            <option value="Felicitacion">Felicitación</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="txtMensaje">Mensaje</label>
-                        <div>
-                            <textarea name="mensaje" id="txtMensaje" cols="30" rows="10" placeholder="Escriba su mensaje..." required></textarea>
-                        </div>
-                    </div>
-                    <input type="submit" value="Enviar">
-                </fieldset>
+                </div>
+                <input type="submit" value="Enviar" class="submit-button">
             </form>
-        </div>    
+        </section>    
 
     </main>
 

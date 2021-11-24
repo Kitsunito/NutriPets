@@ -18,17 +18,18 @@ body {
 header {
     background-color: #90B031;
     height: 60px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
 }
 
 nav {
-    width: 80%;
-    top: 0px;
-    position: fixed;
     text-decoration: none;
-    display: inline-flex;
+    width: 100%;
 }
 
 main {
+    margin: 60px 0 60px 0;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -75,16 +76,26 @@ a {
     color:#FFFFFF;
 }
 
-nav li a {
-    display: inline-block;
-    font-size: 16px;
+form {
+    max-width: 600px;
+    padding: 10px 1px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    background-color: #90B04F;
+    color:#FFFFFF;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
 }
 
 img {
     height: 100%;
 }
 .navbar-brand {
-    width: 20%;
+    width: 30%;
     height: 60px;
     display: inline-block;
     text-align: center;
@@ -92,22 +103,25 @@ img {
 
 .brand-logo{
     height: 100%;
-    width: auto;
     border-radius: 50%;
 }
 
 .menu {
-    width: 80%;
-    position:fixed;
-    right: 0;
+    width: 70%;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
 }
 
 .nav-item {
     height: 60px;
     width: 20%;
     text-align: center;
-    padding-top: 20px;
-
+    vertical-align:middle;
+    padding-top:18px;
+    font-size: 16px;
 }
 
 .div-footer-socialmedia {
@@ -160,6 +174,60 @@ img {
     width: 60%;
 }
 
+.form-question {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 5px;
+    padding: 5 px;
+    width: 95%;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 15px;
+    padding: 10px 10px;
+    color: #495057;
+    background-color: #FFF;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 1px;
+}
+
+.input-radio{
+    display: inline-block;
+    margin-right: 2px;
+    min-height: 1px;
+    min-width: 1.25rem;
+}
+
+.radio-group{
+    margin-left: 25px;
+}
+
+.input-textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 2px;
+}
+
+.opt-label {
+    display: inline-flex;
+    margin-left: 1px;
+}
+
+.submit-button {
+    display: block;
+    width: 99%;
+    padding: 8px;
+    color: inherit;
+    background: #285011;
+    opacity: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+}
+
 #div-portada {
     height: 400px;
 }
@@ -167,4 +235,8 @@ img {
 #portada{
     height: 100%;
     opacity: 0.9;
+}
+
+#opt-question {
+    align-items:flex-start;
 }
