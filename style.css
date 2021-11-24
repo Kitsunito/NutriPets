@@ -39,6 +39,7 @@ main {
 
 section {
     width: 100%;
+    justify-content: center;
 }
 
 article {
@@ -94,6 +95,10 @@ label {
 img {
     height: 100%;
 }
+
+iframe{
+    width: 100%;
+}
 .navbar-brand {
     width: 30%;
     height: 60px;
@@ -146,8 +151,7 @@ img {
 
 .section-products {
     background-color: #dac0a7;
-    justify-content: center;
-    width: 100%;
+    justify-content: space-around;
 }
 
 .div-product{
@@ -157,8 +161,14 @@ img {
 }
 
 .article-text {
-    max-height: 270px;
+    max-height: 300px;
     width: 60%;
+}
+
+.align-media{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .article-image {
@@ -235,6 +245,7 @@ img {
 #portada{
     height: 100%;
     opacity: 0.9;
+    border-radius: 5px;
 }
 
 #opt-question {
