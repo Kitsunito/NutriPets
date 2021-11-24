@@ -13,6 +13,7 @@
 body {
     background-color: #d6d8b6;
     font-family: 'Nunito', sans-serif;
+    color: #40481F;
 }
 
 header {
@@ -70,6 +71,7 @@ h1{
 
 h2 {
     margin-bottom:10px;
+    color:#285011;
 }
 
 a {
@@ -78,7 +80,7 @@ a {
 }
 
 form {
-    max-width: 600px;
+    width: 550px;
     padding: 10px 1px;
     margin-bottom: 50px;
     border-radius: 5px;
@@ -150,14 +152,12 @@ iframe{
 }
 
 .section-products {
-    background-color: #dac0a7;
     justify-content: space-around;
 }
 
 .div-product{
-    height: 150px;
-    width: 180px;
-    background-color: #285011;
+    height: 250px;
+    width: auto;
 }
 
 .article-text {
