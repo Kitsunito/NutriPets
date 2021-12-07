@@ -54,7 +54,7 @@ footer {
     height: 50px;
     width: 100%;
     position: fixed; 
-    display: inline-flex;
+    display: flex;
     bottom: 0;
     padding-top: 20px;
 }
@@ -135,16 +135,17 @@ iframe{
 
 .div-footer-socialmedia {
     position: fixed;
-    right: 0;
     text-align: left;
     font-size: 25px;
     padding-right: 15px;
+    width: 60%;
 }
 
 .div-footer-copyright {
     color:#40481F;
     font-size: 14px;
     padding: 8px 0 0 10px;
+    width: 40%;
 }
 
 .horizontal-flex {
