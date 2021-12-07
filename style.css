@@ -22,6 +22,8 @@ header {
     position: fixed;
     top: 0px;
     width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 nav {
@@ -52,7 +54,7 @@ footer {
     height: 50px;
     width: 100%;
     position: fixed; 
-    display: inline-flex;
+    display: flex;
     bottom: 0;
     padding-top: 20px;
 }
@@ -133,16 +135,17 @@ iframe{
 
 .div-footer-socialmedia {
     position: fixed;
-    right: 0;
     text-align: left;
     font-size: 25px;
     padding-right: 15px;
+    width: 60%;
 }
 
 .div-footer-copyright {
     color:#40481F;
     font-size: 14px;
     padding: 8px 0 0 10px;
+    width: 40%;
 }
 
 .horizontal-flex {
@@ -250,4 +253,22 @@ iframe{
 
 #opt-question {
     align-items:flex-start;
+}
+
+/*Pantallas pequeñas*/
+@media only screen and (max-width:600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: 100px;
+    }
+
+    main {
+        margin: 100px 0 60px 0;
+    }
+}
+
+/*Pantalla mediana*/
+@media only screen and (min-width:600px) and (max-width:992px) {
+    
 }
