@@ -87,18 +87,33 @@ a {
 }
 
 form {
-    width: 550px;
+    min-width: 300px;
+    width: 80%;
+    max-width: 550px;
     padding: 10px 1px;
     margin-bottom: 50px;
     border-radius: 5px;
     background-color: #90B04F;
     color:#FFFFFF;
+    font-family: 'Roboto', 'Sans serif';
 }
 
 label {
     display: flex;
     align-items: center;
     margin-bottom: 2px;
+}
+
+textarea {
+    font-family: inherit;
+}
+
+select {
+    font-family: inherit;
+}
+
+input {
+    font-family: inherit;
 }
 
 img {
@@ -115,7 +130,7 @@ footer a {
 
 /*Clases*/
 .navbar-brand {
-    width: 30%;
+    width: 15%;
     height: 60px;
     display: inline-block;
     text-align: center;
@@ -168,8 +183,15 @@ footer a {
     flex-wrap: wrap;
 }
 
+.div-grid{
+    display: grid;
+    width: 100%;
+}
 .section-products {
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "bajo medio alto";
+    justify-items: center;
 }
 
 .div-product{
@@ -250,12 +272,12 @@ footer a {
     display: block;
     width: 100%;
     height: 15px;
-    padding: 10px 10px;
     color: #495057;
     background-color: #FFF;
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: 1px;
+    padding: 10px 0 10px 0;
 }
 
 .input-radio{
@@ -303,6 +325,12 @@ footer a {
     border-radius: 5px;
 }
 
+#div-grid-id {
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "sale"
+                        "products";
+}
 #opt-question {
     align-items:flex-start;
 }
@@ -368,6 +396,17 @@ pequeñas*/
     .article-image{
         text-align: center;
         padding: 0px;
+    }
+
+    .form-control {
+        display: block;
+        width: 100%;
+        height: 15px;
+        color: #495057;
+        background-color: #FFF;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 1px;
     }
 
     /*IDs*/
