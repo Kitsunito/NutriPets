@@ -5,12 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NutriPets BARF Sogamoso</title>
+    <!--Style-->
     <link rel="stylesheet" href="style.css">
+        <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+        <!--Favicon-->
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+        <!--Animations-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Scripts-->
+        <!--FontAwesome-->
     <script src="https://kit.fontawesome.com/6fea0a6a47.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -18,7 +25,7 @@
         <!--Company's Branding-->
         <div class='navbar-brand'>
             <a href="../index.html" class="navbar-brand-link">
-                <img src="../img/logo.png" alt="" class="brand-logo">
+                <img src="/img/logo.png" alt="" class="brand-logo">
             </a>
         </div>
         <!--Navbar-->
@@ -47,7 +54,7 @@
         <h1>Nutripets BARF Sogamoso</h1>
         <!--Home image-->
         <section>
-            <div id="div-portada">
+            <div id="div-portada" data-aos="zoom-in-down">
                 <img src="img/bannerHome.jpg" alt="Portada Nutripets BARF" id="portada">
             </div>
         </section>
@@ -70,5 +77,13 @@
             </a>
         </div>
     </footer>
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1500
+        });
+    </script>
 </body>
 </html>
