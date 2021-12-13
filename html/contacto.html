@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NutriPets BARF Sogamoso</title>
-    <link rel="stylesheet" href="../style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
-    <script src="https://kit.fontawesome.com/6fea0a6a47.js" crossorigin="anonymous"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NutriPets BARF Sogamoso</title>
+        <!--Style-->
+        <link rel="stylesheet" href="../style.css">
+            <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+            <!--Favicon-->
+        <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+            <!--Animations-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!--Scripts-->
+            <!--FontAwesome-->
+        <script src="https://kit.fontawesome.com/6fea0a6a47.js" crossorigin="anonymous"></script>
+    </head>
 <body>
     <header class="header">
         <!--Company's Branding-->
@@ -47,7 +54,7 @@
             <h1>Contáctanos</h1>
         </div>
         <!--Contact Form-->
-        <section class="horizontal-flex">
+        <section class="horizontal-flex" data-aos="fade-down">  
             <form method="post">
                 <div class="form-question">
                     <label for="txtnombre">Nombre</label>
@@ -111,5 +118,13 @@
             </a>
         </div>
     </footer>
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1500
+        });
+    </script>
 </body>
 </html>
