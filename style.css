@@ -15,9 +15,15 @@ body {
     font-family: 'Nunito', sans-serif;
     color: #40481F;
     height: 100%;
-    width: 97%;
 }
 
+header {
+    background-color: #90B031;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+}
+/*
 header {
     background-color: #90B031;
     height: 60px;
@@ -28,14 +34,14 @@ header {
     flex-direction: row;
     z-index: 1;
 }
-/*
+/**/
 nav {
     text-decoration: none;
     width: 100%;
 }
-*/
+
 main {
-    margin: 60px 0 60px 0;
+    /*margin: 60px 0 60px 0;*/
     display: flex;
     text-align: center;
     justify-content: center;
@@ -131,18 +137,22 @@ footer a {
 }
 
 /*Clases*/
+.nav-link {
+    color:#FFFFFF;
+}
+
 .navbar-brand {
     width: 15%;
     height: 60px;
     display: inline-block;
     text-align: center;
 }
-/*
+
 .brand-logo{
     height: 100%;
     border-radius: 50%;
 }
-
+/*
 .nav-list {
     display: flex;
     flex-direction: row;
@@ -365,7 +375,7 @@ pequeñas*/
         font-size: small;
         width: 100%;
     }
-
+    /*
     header {
         flex-direction: column;
         align-items: center;
