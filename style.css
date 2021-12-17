@@ -344,11 +344,12 @@ pequeñas*/
 
     /*IDs*/
     #div-portada {
-        height: 310px;
+        height: 100%;
     }
 
     #portada{
         max-width:  450px;
+        width: 100%;
         height: auto;
     }
 
@@ -389,11 +390,11 @@ pequeñas*/
 
     /*IDs*/
     #div-portada {
-        height: 360px;
-        margin-bottom: 60px;
+        height: 100%;
     }
 
     #portada{
+        width: 100%;
         max-width: 575px;
         height: auto;
     }
