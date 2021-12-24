@@ -1,0 +1,53 @@
+@import "header";
+@import "sections";
+@import "text";
+@import "forms";
+@import "colours";
+
+/*Estilos*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+img {
+    height: 100%;
+}
+
+ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+
+iframe{
+    width: 100%;
+}
+
+/*Clases*/
+.horizontal-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.div-grid{
+    display: grid;
+    width: 100%;
+}
+

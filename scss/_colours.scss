@@ -1,0 +1,44 @@
+/*Variables*/
+$colour-fondo: #d6d8b6;
+$colour-header: #90B031;
+$colour-highlight: #285011;
+$colour-main: #40481F;
+
+body {
+    background-color: $colour-fondo;
+    color: $colour-main;
+}
+
+header {
+    background-color: $colour-header;
+}
+
+footer {
+    background-color: #c0c493;
+}
+
+h2 {
+    color: $colour-highlight;
+}
+
+form {
+    background-color: $colour-header;
+    color:#FFFFFF;
+}
+
+/*Clases*/
+.nav-link {
+    color:#FFFFFF;
+
+    &:hover {
+        color:$colour-highlight;
+    }
+}
+
+.active {
+    color: $colour-main;
+}
+
+.submit-button {
+    background: $colour-highlight;
+}

@@ -1,0 +1,232 @@
+section {
+    width: 100%;
+    justify-content: center;
+}
+
+article {
+    margin-bottom: 25px;
+}
+
+/*Clases*/
+.section-products { 
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 5fr;
+    grid-template-areas: "title title title" 
+                        "bajo medio alto";
+    grid-column-gap: 5px;
+    grid-row-gap: 15px;
+    margin-bottom: 15px;
+}
+
+.title-section-products {
+    grid-area: title;
+}
+.div-product{
+    height: auto;
+    width: 300px;
+}
+
+.article-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    width: 100%;
+    justify-items: center;
+}
+
+.article-alignment-left {
+    grid-template-areas: "text image";  
+}
+
+.article-alignment-right {
+    grid-template-areas: "image text";
+}
+
+.article-text {
+    width: 80%;
+    grid-area: text;
+    display: flex;
+    flex-direction: column;
+}
+
+.align-media{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.align-left{
+    text-align: right;
+}
+
+.align-right {
+    text-align: left;
+}
+
+.article-image {
+    max-height: 270px;
+    width: 100%;
+    grid-area: image;
+}
+
+.img-right {
+    text-align: right;
+    padding-right: 60px;
+}
+
+.img-left {
+    text-align: left;
+    padding-left: 60px;
+}
+
+.nosotros-map {
+    min-width: 300px;
+    width: 90%;
+    padding: 0px;
+}
+
+/*IDs*/
+#div-portada {
+    height: 410px;
+    margin-bottom: 10px;
+}
+
+#portada{
+    height: 100%;
+    opacity: 0.9;
+    border-radius: 5px;
+}
+
+#div-grid-id {
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "sale"
+                        "products";
+}
+
+#section-sale{
+    display: none;
+}
+
+#div-producto-bajo{
+    grid-area: bajo;
+}
+
+#div-producto-medio{
+    grid-area: medio;
+}
+
+#div-producto-alto{
+    grid-area: alto;
+}
+
+/*Pantallas 
+pequeñas*/
+@media only screen and (max-width:600px) {
+    /*Clases*/
+    .section-products {
+        grid-template-rows: 0.3fr 4fr 4fr 4fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "title" 
+                            "bajo"
+                            "medio"
+                            "alto";
+        }
+
+    .article-grid {
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 60%;
+        width: 100%;
+        height: auto;
+        justify-items: center;
+        text-align: center;
+    }
+    
+    .article-alignment-left {
+        grid-template-areas: "text"
+                            "image";
+    }
+    
+    .article-alignment-right {
+        grid-template-areas: "text"
+                            "image";
+    }
+
+    .article-text{
+        text-align: center;
+        justify-content: center;
+        width: 90%;
+        height: 100%;
+    }
+
+    .article-image{
+        text-align: center;
+        padding: 0px;
+    }
+
+    .nosotros-map{
+        text-align: center;
+        padding: 0px;
+        margin-bottom: 80px;
+
+    }
+
+    /*IDs*/
+    #div-portada {
+        height: 100%;
+    }
+
+    #portada{
+        max-width:  450px;
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+/*Pantalla mediana*/
+@media only screen and (min-width:600px) and (max-width:992px) {
+
+    /*Clases*/
+    .section-products {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.3fr 4fr 4fr;
+        grid-template-areas: "title title" 
+                            "bajo medio"
+                            "alto alto";
+        }
+
+    .article-text {
+        width: 80%;
+        grid-area: text;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .article-image {
+        max-height: 270px;
+        width: 100%;
+        grid-area: image;
+        padding: 0px;
+    }
+
+    .nosotros-map{
+        text-align: center;
+        padding: 0px;
+        height: 100%;
+    }
+
+    /*IDs*/
+    #div-portada {
+        height: 100%;
+    }
+
+    #portada{
+        width: 100%;
+        max-width: 575px;
+        height: auto;
+    }
+}

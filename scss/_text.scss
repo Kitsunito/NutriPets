@@ -1,0 +1,41 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin: 15px 0 25px 0;
+    width: 100%
+}
+
+h2 {
+    margin-bottom:10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+form {
+    font-family: 'Roboto', 'Sans serif';
+    text-align: left;
+}
+
+/*Pantallas 
+pequeñas*/
+@media only screen and (max-width:600px) {
+    /*Markups*/
+    body {
+        font-size: small;
+    }
+
+    h1{
+        text-align: center;
+        margin: 15px 0 0px 0;
+        min-width: 300px;
+    }
+
+    h2{
+        margin-bottom: 5px;
+    }
+}

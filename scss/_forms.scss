@@ -1,0 +1,38 @@
+form {
+    min-width: 300px;
+    width: 80%;
+    max-width: 550px;
+    padding: 10px 1px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+}
+
+select {
+    font-family: inherit;
+}
+
+input {
+    font-family: inherit;
+}
+
+/*Clases*/
+.form-question {
+    display: flex;
+    flex-direction: column;
+    padding: 5 px;
+}
+
+.radio-group{
+    margin-left: 25px;
+}
+
+.submit-button {
+    display: block;
+    width: 99%;
+    padding: 8px;
+    color: inherit;
+    opacity: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+}
