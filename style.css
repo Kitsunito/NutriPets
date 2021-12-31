@@ -25,15 +25,18 @@ section {
 article {
   margin-bottom: 25px; }
 
+/*Mixin*/
 /*Clases*/
 .section-products {
-  justify-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.5fr 5fr;
   grid-template-areas: "title title title"  "bajo medio alto";
   grid-column-gap: 5px;
   grid-row-gap: 15px;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  display: grid;
+  width: 100%;
+  justify-items: center; }
 
 .title-section-products {
   grid-area: title; }
@@ -43,9 +46,10 @@ article {
   width: 300px; }
 
 .article-grid {
-  display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 100%;
+  width: 100%;
+  display: grid;
   width: 100%;
   justify-items: center; }
 
@@ -61,20 +65,22 @@ article {
   display: flex;
   flex-direction: column; }
 
-.align-media {
-  margin-top: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
+/*
+.align-media{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+*/
 .align-left {
   text-align: right; }
 
 .align-right {
   text-align: left; }
 
-.article-image {
-  max-height: 270px;
+.article-image, .img-right, .img-left {
+  max-height: 300px;
   width: 100%;
   grid-area: image; }
 
@@ -109,6 +115,10 @@ article {
 #section-sale {
   display: none; }
 
+#div-grid-products {
+  display: grid;
+  width: 100%; }
+
 #div-producto-bajo {
   grid-area: bajo; }
 
@@ -142,7 +152,7 @@ pequeñas*/
     justify-content: center;
     width: 90%;
     height: 100%; }
-  .article-image {
+  .article-image, .img-right, .img-left {
     text-align: center;
     padding: 0px; }
   .nosotros-map {
@@ -166,15 +176,11 @@ pequeñas*/
     grid-template-areas: "title title"  "bajo medio" "alto alto"; }
   .article-text {
     width: 80%;
-    grid-area: text;
     display: flex;
     flex-direction: column;
     justify-content: center; }
-  .article-image {
-    max-height: 270px;
-    width: 100%;
-    grid-area: image;
-    padding: 0px; }
+  .article-image, .img-right, .img-left {
+    max-height: 270px; }
   .nosotros-map {
     text-align: center;
     padding: 0px;
@@ -314,7 +320,3 @@ iframe {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; }
-
-.div-grid {
-  display: grid;
-  width: 100%; }
