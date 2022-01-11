@@ -279,6 +279,9 @@ form {
 .submit-button {
   background: #285011; }
 
+.copyright {
+  background-color: rgba(0, 0, 0, 0.06); }
+
 /*Estilos*/
 * {
   margin: 0;
