@@ -26,7 +26,7 @@ pequeñas*/
 @media only screen and (max-width:600px) {
     /*Markups*/
     body {
-        font-size: small;
+        font-size: smaller;
     }
 
     h1{
@@ -37,5 +37,17 @@ pequeñas*/
 
     h2{
         margin-bottom: 5px;
+        margin-top: 10px;
+        font-size: large;
     }
+
+    ol li {
+        padding: 5px 0 0 0;
+    }
+
+    #ol-benefits {
+        text-align: left;
+    }
+
+
 }
