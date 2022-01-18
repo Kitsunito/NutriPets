@@ -40,9 +40,15 @@ iframe{
     height: 100%;
 }
 
+
+
 /*Clases*/
 .horizontal-flex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.card-body {
+    margin-bottom: 15px;
 }

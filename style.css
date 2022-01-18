@@ -288,6 +288,9 @@ form {
 .copyright {
   background-color: rgba(0, 0, 0, 0.06); }
 
+.card-body {
+  color: white; }
+
 /*Estilos*/
 * {
   margin: 0;
@@ -322,3 +325,6 @@ iframe {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; }
+
+.card-body {
+  margin-bottom: 15px; }
